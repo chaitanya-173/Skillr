@@ -19,72 +19,89 @@ export const AppContextProvider = (props) => {
     setAllCourses(dummyCourses);
   }
 
-  // Function to calculate average rating of a course
   const calculateRating = (course) => { 
-    const ratings = course.ratings;
-    if (!Array.isArray(ratings) || ratings.length === 0) {
-      return 0;
-    }
-    let totalRating = 0;
-    ratings.forEach(rating => {
-      totalRating += rating.rating;
-    });
-    return totalRating / ratings.length;
+    const ratings = course.ratings || [];
+    if (ratings.length === 0) return 0;
+    const total = ratings.reduce((sum, r) => sum + r.rating, 0);
+    return total / ratings.length;
   }
 
-  // Function to calculate course chapter time
   const calculateChapterTime = (chapter) => {
     let time = 0;
-    chapter.chapterContent.map((lecture) => time += lecture.lectureDuration)
-    return humanizeDuration(time * 60 * 1000, {units: ['h', 'm']});
+    chapter.chapterContent.forEach(lecture => {
+      time += lecture.lectureDuration;
+    });
+    return humanizeDuration(time * 60 * 1000, { units: ['h', 'm'] });
   }
 
-  // Function to calculate the course duration
   const calculateCourseDuration = (course) => {
     let time = 0;
-    course.courseContent.map((chapter) => chapter.chapterContent.map((lecture) => time += lecture.lectureDuration))
-    return humanizeDuration(time * 60 * 1000, {units: ['h', 'm']});
-  }
-
-  // Function to calulate the number of lectures in the course
-  const calculateNoOfLectures = (course) => {
-    let totalLectures = 0;
     course.courseContent.forEach(chapter => {
-      if(Array.isArray(chapter.chapterContent)) {
-        totalLectures += chapter.chapterContent.length;
-      }
+      chapter.chapterContent.forEach(lecture => {
+        time += lecture.lectureDuration;
+      });
     });
-    return totalLectures;
+    return humanizeDuration(time * 60 * 1000, { units: ['h', 'm'] });
   }
 
-  // Function to fetch user enrolled courses
+  const calculateNoOfLectures = (course) => {
+    return course.courseContent.reduce((total, chapter) => {
+      return total + (chapter.chapterContent?.length || 0);
+    }, 0);
+  }
+
   const fetchUserEnrolledCourses = async () => {
     setEnrolledCourses(dummyCourses);
   }
- 
+
+  // 🆕 Create user in DB if not exists
+  const createUserIfNotExists = async () => {
+    try {
+      const token = await getToken();
+      await fetch('https://<your-vercel-backend-url>/webhooks/create-user', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          _id: user.id,
+          name: user.fullName,
+          email: user.primaryEmailAddress.emailAddress,
+          imageUrl: user.imageUrl,
+        }),
+      });
+    } catch (error) {
+      console.error("User create error:", error);
+    }
+  }
+
   useEffect(() => {
     fetchAllCourses();
     fetchUserEnrolledCourses();
-  },[])
-
-  const logToken = async () => {
-    console.log(await getToken());
-  }
+  }, []);
 
   useEffect(() => {
-    if(user) {
-      logToken();
+    if (user) {
+      createUserIfNotExists();
     }
-  },[user])
+  }, [user]);
 
   const value = {
-    allCourses, calculateRating, isEducator, setIsEducator, calculateChapterTime, calculateCourseDuration, calculateNoOfLectures, enrolledCourses, fetchUserEnrolledCourses
-  }
+    allCourses,
+    calculateRating,
+    isEducator,
+    setIsEducator,
+    calculateChapterTime,
+    calculateCourseDuration,
+    calculateNoOfLectures,
+    enrolledCourses,
+    fetchUserEnrolledCourses
+  };
 
   return (
     <AppContext.Provider value={value}>
       {props.children}
     </AppContext.Provider>
-
   )
-} 
+}
