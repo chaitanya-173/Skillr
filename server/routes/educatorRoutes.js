@@ -1,9 +1,8 @@
-import express from 'express'
-import { updateRoleToEducator } from '../controllers/educatorController'
+import express from 'express';
+import { updateRoleToEducator } from '../controllers/educatorController.js';
 
-const educatorRouter = express.Router()
+const educatorRouter = express.Router();
 
-// Add Educator role
-educatorRouter.get('/update-role', updateRoleToEducator)
+educatorRouter.get('/update-role', updateRoleToEducator);
 
 export default educatorRouter;
