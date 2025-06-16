@@ -7,17 +7,19 @@ import { clerkWebhooks } from "./controllers/webhooks.js";
 // initialize express
 const app = express();
 
-// connnect to db
+// connect to db
 await connectDB();
 
 // middlewares
 app.use(cors());
+app.use(express.json()); // for all routes
+
+// 👇 use raw body only for /clerk webhook route
+app.post("/clerk", express.raw({ type: "application/json" }), clerkWebhooks);
 
 app.get("/", (req, res) => res.send("API working"));
-app.post("/clerk", express.json(), clerkWebhooks);
 
 const PORT = process.env.PORT || 5000;
-
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
