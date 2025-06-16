@@ -3,6 +3,8 @@ import cors from "cors";
 import "dotenv/config";
 import connectDB from "./configs/mongodb.js";
 import webhookRoutes from "./routes/webhooks.js";
+import educatorRouter from "./routes/educatorRoutes.js";
+import { clerkMiddleware } from "@clerk/express";
 
 // Initialize express
 const app = express();
@@ -13,6 +15,7 @@ await connectDB();
 // Middlewares
 app.use(cors());
 app.use(express.json());
+app.use(clerkMiddleware());
 
 // Logging middleware
 app.use((req, res, next) => {
@@ -23,6 +26,7 @@ app.use((req, res, next) => {
 // Routes
 app.get("/", (req, res) => res.send("API working"));
 app.use("/webhooks", webhookRoutes);
+app.use('/api/educator', express.json(), educatorRouter);
 
 // Port
 const PORT = process.env.PORT || 5000;
