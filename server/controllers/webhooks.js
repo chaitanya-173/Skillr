@@ -2,6 +2,7 @@ import { Webhook } from "svix";
 import User from "../models/User.js";
 
 // API controller function to manage clerk user with database
+
 export const clerkWebhooks = async (req, res) => {
   try {
     const whook = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
@@ -19,7 +20,6 @@ export const clerkWebhooks = async (req, res) => {
           email: data.email_addresses[0].email_address,
           name: data.first_name + " " + data.last_name,
           imageUrl: data.image_url,
-          role: "educator",
         };
         await User.create(userData);
         res.json({});
