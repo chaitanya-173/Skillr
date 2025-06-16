@@ -9,9 +9,6 @@ import { clerkMiddleware } from "@clerk/express";
 // Initialize express
 const app = express();
 
-// Connect to database
-await connectDB();
-
 // Middlewares
 app.use(cors());
 app.use(express.json());
@@ -26,11 +23,14 @@ app.use((req, res, next) => {
 // Routes
 app.get("/", (req, res) => res.send("API working"));
 app.use("/webhooks", webhookRoutes);
-app.use('/api/educator', express.json(), educatorRouter);
+app.use("/api/educator", express.json(), educatorRouter);
 
-// Port
-const PORT = process.env.PORT || 5000;
+// Connect to database and export the app
+async function initializeApp() {
+  await connectDB();
+  console.log("Database connected!");
+  return app;
+}
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+// Export the initialized app for Vercel
+export default initializeApp();
