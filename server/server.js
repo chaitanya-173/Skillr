@@ -4,22 +4,17 @@ import "dotenv/config";
 import connectDB from "./configs/mongodb.js";
 import { clerkWebhooks } from "./controllers/webhooks.js";
 
-// initialize express
 const app = express();
 
-// connect to db
-await connectDB();
+await connectDB(); // Connect to DB
 
-// middlewares
 app.use(cors());
-app.use(express.json()); // for all routes
+app.use(express.json()); // Needed for parsing webhooks
 
-// 👇 use raw body only for /clerk webhook route
-app.post("/clerk", express.raw({ type: "application/json" }), clerkWebhooks);
-
-app.get("/", (req, res) => res.send("API working"));
+app.get("/", (req, res) => res.send("API working ✅"));
+app.post("/clerk", clerkWebhooks); // Webhook handler
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
