@@ -4,10 +4,6 @@ import search_icon from './search_icon.svg'
 import cross_icon from './cross_icon.svg'
 import upload_area from './upload_area.svg'
 import sketch from './sktech.svg'
-import microsoft_logo from './microsoft_logo.svg'
-import walmart_logo from './walmart_logo.svg'
-import accenture_logo from './accenture_logo.svg'
-import adobe_logo from './adobe_logo.svg'
 import paypal_logo from './paypal_logo.svg'
 import course_1_thumbnail from './course_1.png'
 import course_2_thumbnail from './course_2.png'
@@ -27,9 +23,6 @@ import home_icon from './home_icon.svg'
 import add_icon from './add_icon.svg'
 import my_course_icon from './my_course_icon.svg'
 import person_tick_icon from './person_tick_icon.svg'
-import facebook_icon from './facebook_icon.svg'
-import instagram_icon from './instagram_icon.svg'
-import twitter_icon from './twitter_icon.svg'
 import file_upload_icon from './file_upload_icon.svg'
 import appointments_icon from './appointments_icon.svg'
 import earning_icon from './earning_icon.svg'
@@ -48,10 +41,6 @@ export const assets = {
     logo,
     search_icon,
     sketch,
-    microsoft_logo,
-    walmart_logo,
-    accenture_logo,
-    adobe_logo,
     paypal_logo,
     course_1_thumbnail,
     course_2_thumbnail,
@@ -75,9 +64,6 @@ export const assets = {
     add_icon,
     my_course_icon,
     person_tick_icon,
-    facebook_icon,
-    instagram_icon,
-    twitter_icon,
     course_4,
     file_upload_icon,
     appointments_icon,
@@ -93,37 +79,13 @@ export const assets = {
 
 export const dummyEducatorData = {
     "_id": "675ac1512100b91a6d9b8b24",
-    "name": "GreatStack",
-    "email": "user.greatstack@gmail.com",
+    "name": "Chaitanya",
+    "email": "chaitanyachaudhary73@gmail.com",
     "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yclFkaDBOMmFqWnBoTTRBOXZUanZxVlo0aXYifQ",
     "createdAt": "2024-12-12T10:56:17.930Z",
     "updatedAt": "2024-12-12T10:56:17.930Z",
     "__v": 0
 }
-
-export const dummyTestimonial = [
-    {
-        name: 'Donald Jackman',
-        role: 'SWE 1 @ Amazon',
-        image: assets.profile_img_1,
-        rating: 5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
-    },
-    {
-        name: 'Richard Nelson',
-        role: 'SWE 2 @ Samsung',
-        image: assets.profile_img_2,
-        rating: 4,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
-    },
-    {
-        name: 'James Washington',
-        role: 'SWE 2 @ Google',
-        image: assets.profile_img_3,
-        rating: 4.5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
-    },
-];
 
 export const dummyDashboardData = {
     "totalEarnings": 707.38,
@@ -132,23 +94,23 @@ export const dummyDashboardData = {
             "courseTitle": "Introduction to JavaScript",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "Hitesh Chaudhary",
                 "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
             }
         },
         {
-            "courseTitle": "Advanced Python Programming",
+            "courseTitle": "Introduction to React",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "Complete Coding",
                 "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
             }
         },
         {
-            "courseTitle": "Web Development Bootcamp",
+            "courseTitle": "DSA Bootcamp",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "Striver",
                 "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
             }
         },
@@ -156,15 +118,15 @@ export const dummyDashboardData = {
             "courseTitle": "Data Science with Python",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "Campus X",
                 "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
             }
         },
         {
-            "courseTitle": "Cybersecurity Basics",
+            "courseTitle": "Introduction to NodeJS",
             "student": {
                 "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-                "name": "Great Stack",
+                "name": "Complete Coding",
                 "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
             }
         }
@@ -176,7 +138,7 @@ export const dummyStudentEnrolled = [
     {
         "student": {
             "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
+            "name": "Karan",
             "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
         },
         "courseTitle": "Introduction to JavaScript",
@@ -185,28 +147,28 @@ export const dummyStudentEnrolled = [
     {
         "student": {
             "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
+            "name": "Arjun",
             "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
         },
-        "courseTitle": "Introduction to JavaScript",
+        "courseTitle": "Introduction to NodeJS",
         "purchaseDate": "2024-12-20T08:59:49.964Z"
     },
     {
         "student": {
             "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
+            "name": "Ram",
             "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
         },
-        "courseTitle": "Advanced Python Programming",
+        "courseTitle": "Introduction to React",
         "purchaseDate": "2024-12-20T11:03:42.931Z"
     },
     {
         "student": {
             "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
+            "name": "Lakshman",
             "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
         },
-        "courseTitle": "Web Development Bootcamp",
+        "courseTitle": "DSA Bootcamp",
         "purchaseDate": "2024-12-20T11:04:48.798Z"
     }
 ]
@@ -216,7 +178,7 @@ export const dummyCourses = [
         "_id": "605c72efb3f1c2b1f8e4e1a1",
         "courseTitle": "Introduction to JavaScript",
         "courseDescription": "<h2>Learn the Basics of JavaScript</h2><p>JavaScript is a versatile programming language that powers the web. In this course, you will learn the fundamentals of JavaScript, including syntax, data types, and control structures.</p><p>This course is perfect for beginners who want to start their journey in web development. By the end of this course, you will be able to create interactive web pages and understand the core concepts of JavaScript.</p><ul><li>Understand the basics of programming</li><li>Learn how to manipulate the DOM</li><li>Create dynamic web applications</li></ul>",
-        "coursePrice": 49.99,
+        "coursePrice": 4000,
         "isPublished": true,
         "discount": 20,
         "courseContent": [
@@ -228,16 +190,16 @@ export const dummyCourses = [
                     {
                         "lectureId": "lecture1",
                         "lectureTitle": "What is JavaScript?",
-                        "lectureDuration": 16,
-                        "lectureUrl": "https://youtu.be/CBWnBi-awSA",
+                        "lectureDuration": 5,
+                        "lectureUrl": "https://youtu.be/Hr5iLG7sUa0?si=pS6lotKHHSG4tpRw",
                         "isPreviewFree": true,
                         "lectureOrder": 1
                     },
                     {
                         "lectureId": "lecture2",
                         "lectureTitle": "Setting Up Your Environment",
-                        "lectureDuration": 19,
-                        "lectureUrl": "https://youtu.be/4l87c2aeB4I",
+                        "lectureDuration": 12,
+                        "lectureUrl": "https://youtu.be/cvoLc3deAdQ?si=2kyVDnNBHsNMGhLO",
                         "isPreviewFree": false,
                         "lectureOrder": 2
                     }
@@ -252,7 +214,7 @@ export const dummyCourses = [
                         "lectureId": "lecture3",
                         "lectureTitle": "Understanding Variables",
                         "lectureDuration": 20,
-                        "lectureUrl": "https://youtu.be/pZQeBJsGoDQ",
+                        "lectureUrl": "https://youtu.be/-9knnv97wSc?si=nXircUECs83eX1G_",
                         "isPreviewFree": true,
                         "lectureOrder": 1
                     },
@@ -260,7 +222,7 @@ export const dummyCourses = [
                         "lectureId": "lecture4",
                         "lectureTitle": "Data Types in JavaScript",
                         "lectureDuration": 10,
-                        "lectureUrl": "https://youtu.be/ufHT2WEkkC4",
+                        "lectureUrl": "https://youtu.be/X7hDBhd_L5U?si=NqD2p9qLjuIgx2iB",
                         "isPreviewFree": false,
                         "lectureOrder": 2
                     }
@@ -694,6 +656,461 @@ export const dummyCourses = [
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ab",
+        "courseTitle": "Introduction to Cybersecurity",
+        "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
+        "coursePrice": 59.99,
+        "isPublished": true,
+        "discount": 15,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Cybersecurity Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "Introduction to Cybersecurity",
+                        "lectureDuration": 700,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Understanding Cyber Threats",
+                        "lectureDuration": 750,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Network Security Fundamentals",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Securing Networks",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Firewalls and VPNs",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:56:13.208Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+    },
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1zy",
+        "courseTitle": "Introduction to Cybersecurity",
+        "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
+        "coursePrice": 59.99,
+        "isPublished": true,
+        "discount": 15,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Cybersecurity Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "Introduction to Cybersecurity",
+                        "lectureDuration": 700,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Understanding Cyber Threats",
+                        "lectureDuration": 750,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Network Security Fundamentals",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Securing Networks",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Firewalls and VPNs",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:56:13.208Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+    },
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1zy",
+        "courseTitle": "Introduction to Cybersecurity",
+        "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
+        "coursePrice": 59.99,
+        "isPublished": true,
+        "discount": 15,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Cybersecurity Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "Introduction to Cybersecurity",
+                        "lectureDuration": 700,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Understanding Cyber Threats",
+                        "lectureDuration": 750,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Network Security Fundamentals",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Securing Networks",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Firewalls and VPNs",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:56:13.208Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+    },
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1zy",
+        "courseTitle": "Introduction to Cybersecurity",
+        "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
+        "coursePrice": 59.99,
+        "isPublished": true,
+        "discount": 15,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Cybersecurity Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "Introduction to Cybersecurity",
+                        "lectureDuration": 700,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Understanding Cyber Threats",
+                        "lectureDuration": 750,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Network Security Fundamentals",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Securing Networks",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Firewalls and VPNs",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:56:13.208Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+    },
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1zy",
+        "courseTitle": "Introduction to Cybersecurity",
+        "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
+        "coursePrice": 59.99,
+        "isPublished": true,
+        "discount": 15,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Cybersecurity Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "Introduction to Cybersecurity",
+                        "lectureDuration": 700,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Understanding Cyber Threats",
+                        "lectureDuration": 750,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Network Security Fundamentals",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Securing Networks",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Firewalls and VPNs",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:56:13.208Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+    },
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1zy",
+        "courseTitle": "Introduction to Cybersecurity",
+        "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
+        "coursePrice": 59.99,
+        "isPublished": true,
+        "discount": 15,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Cybersecurity Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "Introduction to Cybersecurity",
+                        "lectureDuration": 700,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Understanding Cyber Threats",
+                        "lectureDuration": 750,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Network Security Fundamentals",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Securing Networks",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Firewalls and VPNs",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:56:13.208Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+    },
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1zy",
+        "courseTitle": "Introduction to Cybersecurity",
+        "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
+        "coursePrice": 59.99,
+        "isPublished": true,
+        "discount": 15,
+        "courseContent": [
+            {
+                "chapterId": "chapter1",
+                "chapterOrder": 1,
+                "chapterTitle": "Cybersecurity Basics",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture1",
+                        "lectureTitle": "Introduction to Cybersecurity",
+                        "lectureDuration": 700,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture2",
+                        "lectureTitle": "Understanding Cyber Threats",
+                        "lectureDuration": 750,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            },
+            {
+                "chapterId": "chapter2",
+                "chapterOrder": 2,
+                "chapterTitle": "Network Security Fundamentals",
+                "chapterContent": [
+                    {
+                        "lectureId": "lecture3",
+                        "lectureTitle": "Securing Networks",
+                        "lectureDuration": 800,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": true,
+                        "lectureOrder": 1
+                    },
+                    {
+                        "lectureId": "lecture4",
+                        "lectureTitle": "Firewalls and VPNs",
+                        "lectureDuration": 850,
+                        "lectureUrl": "https://youtu.be/-HeadgoqJ7A",
+                        "isPreviewFree": false,
+                        "lectureOrder": 2
+                    }
+                ]
+            }
+        ],
+        "educator": "675ac1512100b91a6d9b8b24",
+        "enrolledStudents": [
+            "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
+        ],
+        "courseRatings": [],
+        "createdAt": "2024-12-17T08:16:53.622Z",
+        "updatedAt": "2025-01-02T06:56:13.208Z",
+        "__v": 1,
+        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+    },
+    {
+        "_id": "605c72efb3f1c2b1f8e4e1zy",
         "courseTitle": "Introduction to Cybersecurity",
         "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
         "coursePrice": 59.99,

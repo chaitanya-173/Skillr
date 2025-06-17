@@ -17,8 +17,11 @@ const Navbar = () => {
   return (
     <div className={`flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 border-b border-gray-500 py-4 
       ${ isCourseListPage ? "bg-white" : "bg-cyan-100/70" }`}>
-      {/* TODO: Change the assets.logo */}
-      <img src={assets.logo} alt="Logo" onClick={() => navigate('/')} className="w-28 lg:w-32 cursor-pointer" />
+      <div onClick={() => navigate('/')} className="w-28 lg:w-32 cursor-pointer flex items-center">
+        <span className="ml-2 text-xl lg:text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+          UpSkillr
+        </span>
+      </div>
 
       {/* Desktop view */}
       <div className="hidden md:flex items-center gap-5 text-grey-500">
@@ -26,7 +29,7 @@ const Navbar = () => {
           {/* First Create Account then only access the platform. */}
           { user && 
             <> 
-              <button onClick={() => {navigate('/educator')}}>{isEducator ? 'Educator Dashboard' : 'Become Educator'}</button>
+              <button onClick={() => {navigate('/educator')}}>{isEducator ? 'Admin Dashboard' : 'Become Educator'}</button>
               | <Link to="/my-enrollments">My Enrollments</Link>
             </>
           }

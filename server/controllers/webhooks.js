@@ -3,7 +3,7 @@ import User from "../models/User.js";
 
 export const clerkWebhooks = async (req, res) => {
   try {
-    console.log("✅ Clerk webhook hit");
+    console.log("Clerk webhook hit");
 
     const payload = JSON.stringify(req.body);
     const headers = {
@@ -17,12 +17,12 @@ export const clerkWebhooks = async (req, res) => {
       const wh = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
       event = wh.verify(payload, headers);
     } catch (err) {
-      console.error("❌ Signature verification failed:", err.message);
+      console.error("Signature verification failed:", err.message);
       return res.status(400).json({ success: false, error: "Invalid webhook signature" });
     }
 
     const { data, type } = event;
-    console.log("📩 Event Type:", type);
+    console.log("Event Type:", type);
 
     switch (type) {
       case "user.created": {
@@ -67,7 +67,7 @@ export const clerkWebhooks = async (req, res) => {
 
     res.status(200).json({ success: true });
   } catch (error) {
-    console.error("❌ Webhook error:", error.message);
+    console.error("Webhook error:", error.message);
     res.status(400).json({ success: false, error: error.message });
   }
 };
